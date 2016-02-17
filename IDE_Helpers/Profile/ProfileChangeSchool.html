@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qaalpha.founder.org/" />
+<title>ProfileChangeSchool</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ProfileChangeSchool</td></tr>
+</thead><tbody>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Change School</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.fontIcon.ficon-dot</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Change School</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Change School</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class=&quot;selectize-control form-control single&quot;]//input[@placeholder=&quot;Please enter school name.&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@class=&quot;selectize-control form-control single&quot;]//input[@placeholder=&quot;Please enter school name.&quot;]</td>
+	<td>KTH Royal Institute of Technology${KEY_DOWN}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@data-value='KTH Royal Institute of Technology']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@data-value='KTH Royal Institute of Technology']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.button-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=input.button-primary</td>
+	<td></td>
+</tr>
+<!--Remove School-->
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Change School</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.fontIcon.ficon-dot</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Change School</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Change School</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='selectize-input items full has-options has-items']//input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@class='selectize-input items full has-options has-items']//input</td>
+	<td>${KEY_BACKSPACE}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.button-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=input.button-primary</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

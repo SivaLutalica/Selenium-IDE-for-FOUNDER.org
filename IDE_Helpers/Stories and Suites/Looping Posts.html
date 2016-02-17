@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qaalpha.founder.org/home/" />
+<title>Create posts</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create posts</td></tr>
+</thead><tbody>
+<tr>
+	<td>getEval</td>
+	<td>index = 0;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>index &lt; 20;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.fontIcon.ficon-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Title</td>
+	<td>javascript{'Post - rb. ' + index + ' objavljen u ' +(new Date().getHours()+&quot; : &quot; + new Date().getMinutes() + &quot; : &quot; + new Date().getSeconds()) + 'h'}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Content</td>
+	<td>Lorem ipsum dolor sit amet, te dicam neglegentur cum. Affert tantas definiebas est ei. Et justo facete per, has in magna dicant atomorum. Mei impetus facilisis in, velit solet laboramus vel in, id laudem nonumes concludaturque nam. Ad sed incorrupte scriptorem.&nbsp;&nbsp;An pro enim fuisset. Nobis quodsi dissentiunt no sit. Eum iusto aeterno ne. Sumo tamquam forensibus in mea, cum possit doctus ne.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.fontIcon.ficon-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>index++;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

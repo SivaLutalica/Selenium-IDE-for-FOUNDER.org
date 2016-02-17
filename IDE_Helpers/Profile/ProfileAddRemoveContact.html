@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qaalpha.founder.org/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<!--Profile Test Cases-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//section[@id='sectionContact']/div[@class='subtitle-box']/ul[@class='action-list']//a[contains(@href, &quot;updatecontactinfo&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//section[@id='sectionContact']/div[@class='subtitle-box']/ul[@class='action-list']//a[contains(@href, &quot;updatecontactinfo&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Phone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Phone</td>
+	<td>+123 456 789</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Facebook</td>
+	<td>facebook/testSelenium</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Twitter</td>
+	<td>twitter/testSelenium</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Google</td>
+	<td>google/testSelenium</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LinkedIn</td>
+	<td>linkedin/testSelenium</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.button-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<!--Brisanje Contact Info podataka-->
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>id=Phone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//section[@id='sectionContact']/div[@class='subtitle-box']/ul[@class='action-list']//a[contains(@href, &quot;updatecontactinfo&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Phone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Phone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Facebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Twitter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Google</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LinkedIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.button-primary</td>
+	<td></td>
+</tr>
+<!--Company Test Cases-->
+</tbody></table>
+</body>
+</html>

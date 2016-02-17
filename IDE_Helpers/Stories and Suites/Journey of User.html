@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qaalpha.founder.org/home/" />
+<title>Journey of User</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Journey of User</td></tr>
+</thead><tbody>
+<tr>
+	<td>getEval</td>
+	<td>index = 1;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>index &lt; 3;</td>
+	<td></td>
+</tr>
+<!--Sign in-->
+<tr>
+	<td>click</td>
+	<td>//a[@id='loginLink']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//button[@id='Google']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Google</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=choose-account-2</td>
+	<td>Vladimir Grgic vladimir@founder.org</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=choose-account-2</td>
+	<td>Vladimir Grgic vladimir@founder.org</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=header-avatar</td>
+	<td></td>
+</tr>
+<!--Open Menu-->
+<tr>
+	<td>click</td>
+	<td>id=header-avatar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<!--Go to first company-->
+<tr>
+	<td>click</td>
+	<td>//ul[@id='companyExtend']/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//span[@class='avatar-company-enormous']</td>
+	<td></td>
+</tr>
+<!--Go to profile-->
+<tr>
+	<td>click</td>
+	<td>//ul[@class='PageNavigation-menu u-marginBottom-xxxLarge']/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//span[@class='avatar-person-enormous']</td>
+	<td></td>
+</tr>
+<!--Go to whats new-->
+<tr>
+	<td>click</td>
+	<td>//ul[@class='PageNavigation-menu'][1]/li[1]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='whatsNew-list']</td>
+	<td></td>
+</tr>
+<!--Go to first forum-->
+<tr>
+	<td>click</td>
+	<td>//ul[@id='feedsExtend']/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.fontIcon.ficon-plus</td>
+	<td></td>
+</tr>
+<!--Post First-->
+<tr>
+	<td>click</td>
+	<td>css=span.fontIcon.ficon-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Title</td>
+	<td>javascript{'Post run ' + index + ' - objavljen u ' +(new Date().getHours()+&quot; : &quot; + new Date().getMinutes() + &quot; : &quot; + new Date().getSeconds()) + 'h'}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Content</td>
+	<td>Lorem ipsum dolor sit amet, te dicam neglegentur cum. Affert tantas definiebas est ei. Et justo facete per, has in magna dicant atomorum. Mei impetus facilisis in, velit solet laboramus vel in, id laudem nonumes concludaturque nam. Ad sed incorrupte scriptorem.&nbsp;&nbsp;An pro enim fuisset. Nobis quodsi dissentiunt no sit. Eum iusto aeterno ne. Sumo tamquam forensibus in mea, cum possit doctus ne.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.fontIcon.ficon-plus</td>
+	<td></td>
+</tr>
+<!--Comment on first post-->
+<tr>
+	<td>click</td>
+	<td>//section[@class='post'][1]//ul[@class='post-actions']/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//section[@class='post'][1]//textarea[@class='comment-input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//section[@class='post'][1]//textarea[@class='comment-input']</td>
+	<td>This is my comment ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='comment-item']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//section[@class='post'][1]//ul[@class='post-actions']/li[1]//input[@value='Like']</td>
+	<td></td>
+</tr>
+<!--Post Second-->
+<tr>
+	<td>click</td>
+	<td>css=span.fontIcon.ficon-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Title</td>
+	<td>javascript{'Post 2 in run ' + index + '&nbsp;&nbsp;- objavljen u ' +(new Date().getHours()+&quot; : &quot; + new Date().getMinutes() + &quot; : &quot; + new Date().getSeconds()) + 'h'}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Content</td>
+	<td>Lorem ipsum dolor sit amet, te dicam neglegentur cum. Affert tantas definiebas est ei. Et justo facete per, has in magna dicant atomorum. Mei impetus facilisis in, velit solet laboramus vel in, id laudem nonumes concludaturque nam. Ad sed incorrupte scriptorem.&nbsp;&nbsp;An pro enim fuisset. Nobis quodsi dissentiunt no sit. Eum iusto aeterno ne. Sumo tamquam forensibus in mea, cum possit doctus ne.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.fontIcon.ficon-plus</td>
+	<td></td>
+</tr>
+<!--Comment on first post-->
+<tr>
+	<td>click</td>
+	<td>//section[@class='post'][1]//ul[@class='post-actions']/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//section[@class='post'][1]//textarea[@class='comment-input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//section[@class='post'][1]//textarea[@class='comment-input']</td>
+	<td>This is my comment ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='comment-item']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//section[@class='post'][1]//ul[@class='post-actions']/li[1]//input[@value='Like']</td>
+	<td></td>
+</tr>
+<!--Sign out-->
+<tr>
+	<td>click</td>
+	<td>//form[@id='signoutForm']/a[@class='item-default']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@id='loginLink']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>index++;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qadelta.founder.org/" />
+<title>OpenPostAddEditDeleteComment</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">OpenPostAddEditDeleteComment</td></tr>
+</thead><tbody>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//section[@class='post'][1]/h2/a[@class='u-link-assimilate']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//section[@class='post'][1]/h2/a[@class='u-link-assimilate']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//textarea[@name='CommentText']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//textarea[@name='CommentText']</td>
+	<td>This is a comment on first post created from forum page${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='comment-item']</td>
+	<td></td>
+</tr>
+<!--Edit-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='comment-item']//div[@class='comment-info']//ul[@class='action-list']/li/a[contains(text(), 'Edit')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='comment-item']//div[@class='comment-info']//ul[@class='action-list']/li/a[contains(text(), 'Edit')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//textarea[@id='CommentText']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//textarea[@id='CommentText']</td>
+	<td> Edited</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.button-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>//div[@class='jfp-modal']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<!--Delete-->
+<tr>
+	<td>click</td>
+	<td>//div[@class='comment-item']//div[@class='comment-info']//ul[@class='action-list']/li/a[contains(text(), 'Delete')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='jfp-modal']//input[@value='Delete']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='jfp-modal']//input[@value='Delete']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>//div[@class='comment-item']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='title-bar-info']/a[@class='title-info action-secondary']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@data-jfp-container='feed.posts']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
